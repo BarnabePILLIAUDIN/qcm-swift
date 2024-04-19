@@ -3,12 +3,12 @@ import SwiftUI
 struct UnloggedView:View {
     @Binding var isLogged:Bool
     @Binding var user: User?
-    @State var showError = false
+    @State var error = ""
     @StateObject var viewModel = AuthViewModel.shared
     
     var body: some View {
-        if showError {
-            Text("Une erreur est survenue")
+        if error.count > 0 {
+            Text(error)
                 .font(.largeTitle)
                 .foregroundStyle(.red)
         }
@@ -18,13 +18,15 @@ struct UnloggedView:View {
             TextField("Identifaiant", text: $viewModel.inputSignInPseudo)
             TextField("Mot de passe", text: $viewModel.inputSignInPassword)
             Button("Se connecter"){
-                let userLogin = viewModel.signIn()
+                let result = viewModel.signIn()
+                let userLogin = result.0
+                let errorString = result.1
                 if let userLogin{
                     user = userLogin
                     viewModel.resetSignInForm()
                     isLogged = true
                 } else {
-                    showError = true
+                    error = errorString
                 }
                 
             }
@@ -42,13 +44,15 @@ struct UnloggedView:View {
                 Text("Compte administrateur")
             })
             Button("S'inscrire"){
-                let newUser = viewModel.signUp()
+                let result = viewModel.signUp()
+                let newUser = result.0
+                let errorString = result.1
                 if let newUser{
                     user = newUser
                     isLogged = true
                     viewModel.resetSignUpForm()
                 } else {
-                    showError = true
+                    error = errorString
                 }
                 
             }

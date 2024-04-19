@@ -20,6 +20,7 @@ class DataController: ObservableObject {
     
     func saveUser(firstName: String,familyName:String,password:String,pseudo:String,isAdmin:Bool,grade:Int16 = -1) -> User? {
         let registeredUser = User(context: viewContext)
+        registeredUser.id = UUID()
         registeredUser.firstName = firstName
         registeredUser.password = password
         registeredUser.familyName = familyName

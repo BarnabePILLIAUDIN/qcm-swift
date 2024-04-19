@@ -17,6 +17,7 @@
 		C01582CF2BD2697D00B1CBAC /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582CE2BD2697D00B1CBAC /* UserView.swift */; };
 		C01582D32BD26AE300B1CBAC /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582D22BD26AE300B1CBAC /* QuestionsViewModel.swift */; };
 		C01582D72BD26D5C00B1CBAC /* QuestionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582D62BD26D5C00B1CBAC /* QuestionCard.swift */; };
+		C091515B2BD29E010041F6B8 /* AdminViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091515A2BD29E010041F6B8 /* AdminViewModel.swift */; };
 		F0409D092BD19A0F007FDC4B /* TestSubDeVinciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0409D082BD19A0F007FDC4B /* TestSubDeVinciTests.swift */; };
 		F0409D212BD23F97007FDC4B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0409D202BD23F97007FDC4B /* Users.swift */; };
 		F0D2B5562BCEF3F800BDD55F /* TestSubDeVinciApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5552BCEF3F800BDD55F /* TestSubDeVinciApp.swift */; };
@@ -47,6 +48,7 @@
 		C01582CE2BD2697D00B1CBAC /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		C01582D22BD26AE300B1CBAC /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
 		C01582D62BD26D5C00B1CBAC /* QuestionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCard.swift; sourceTree = "<group>"; };
+		C091515A2BD29E010041F6B8 /* AdminViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewModel.swift; sourceTree = "<group>"; };
 		F0409D062BD19A0F007FDC4B /* TestSubDeVinciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSubDeVinciTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0409D082BD19A0F007FDC4B /* TestSubDeVinciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubDeVinciTests.swift; sourceTree = "<group>"; };
 		F0409D202BD23F97007FDC4B /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
@@ -79,12 +81,9 @@
 		C01582BA2BD254BD00B1CBAC /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C09151572BD29D060041F6B8 /* sub-screens */,
 				C09151562BD29B330041F6B8 /* components */,
 				F0D2B5572BCEF3F800BDD55F /* MainScreen.swift */,
-				C01582BB2BD254D300B1CBAC /* UnloggedView.swift */,
-				C01582CA2BD25D4F00B1CBAC /* LoggedView.swift */,
-				C01582CC2BD268D700B1CBAC /* AdminView.swift */,
-				C01582CE2BD2697D00B1CBAC /* UserView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -92,6 +91,7 @@
 		C01582BD2BD2562000B1CBAC /* model */ = {
 			isa = PBXGroup;
 			children = (
+				C09151592BD29DE60041F6B8 /* admin */,
 				C01582D12BD26AB600B1CBAC /* questions */,
 				C01582D02BD26A9B00B1CBAC /* user */,
 				C01582C42BD2580A00B1CBAC /* DataController.swift */,
@@ -124,6 +124,25 @@
 				C01582D62BD26D5C00B1CBAC /* QuestionCard.swift */,
 			);
 			path = components;
+			sourceTree = "<group>";
+		};
+		C09151572BD29D060041F6B8 /* sub-screens */ = {
+			isa = PBXGroup;
+			children = (
+				C01582CE2BD2697D00B1CBAC /* UserView.swift */,
+				C01582BB2BD254D300B1CBAC /* UnloggedView.swift */,
+				C01582CC2BD268D700B1CBAC /* AdminView.swift */,
+				C01582CA2BD25D4F00B1CBAC /* LoggedView.swift */,
+			);
+			path = "sub-screens";
+			sourceTree = "<group>";
+		};
+		C09151592BD29DE60041F6B8 /* admin */ = {
+			isa = PBXGroup;
+			children = (
+				C091515A2BD29E010041F6B8 /* AdminViewModel.swift */,
+			);
+			path = admin;
 			sourceTree = "<group>";
 		};
 		F0409D072BD19A0F007FDC4B /* TestSubDeVinciTests */ = {
@@ -287,6 +306,7 @@
 				F0409D212BD23F97007FDC4B /* Users.swift in Sources */,
 				C01582BC2BD254D300B1CBAC /* UnloggedView.swift in Sources */,
 				F0D2B5642BCEF41900BDD55F /* Models.swift in Sources */,
+				C091515B2BD29E010041F6B8 /* AdminViewModel.swift in Sources */,
 				F0D2B5582BCEF3F800BDD55F /* MainScreen.swift in Sources */,
 				C01582CF2BD2697D00B1CBAC /* UserView.swift in Sources */,
 				F0D2B5562BCEF3F800BDD55F /* TestSubDeVinciApp.swift in Sources */,

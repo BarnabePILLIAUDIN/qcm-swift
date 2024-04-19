@@ -32,26 +32,34 @@ class AuthViewModel: ObservableObject{
         inputSignUpPseudo = ""
     }
     
-    func signIn() -> User? {
+    func signIn() -> (User?,String) {
+        if inputSignInPseudo == "" || inputSignInPassword == ""{
+            return (nil, "Merci de remplir tout les champs du formulaire")
+        }
+        
         for user in storageModel.getAllUsers() {
             if user.pseudo == inputSignInPseudo && user.password == inputSignInPassword{
-                return user
+                return (user,"")
             }
         }
-        return nil
+        return (nil,"Utilisateur inconnu")
     }
     
-    func signUp()-> User? {
+    func signUp()-> (User?,String) {
+        if inputSignUpFirstName == "" || inputSignUpFamilyName == "" || inputSignUpPseudo == "" || inputSignUpPassword == "" || inputSignUpPassword2 == "" {
+            return (nil, "Merci de remplir tout les champs du formulaire")
+        }
+        
         if inputSignUpPassword != inputSignUpPassword2{
-            return nil
+            return (nil,"Les mots de passes ne correspondent pas")
         }
         
         for user in storageModel.getAllUsers(){
             if user.pseudo == inputSignUpPseudo {
-                return nil
+                return (nil,"Vous avez déjà un compte connectez vous")
             }
         }
         
-        return storageModel.saveUser(firstName: inputSignUpFirstName, familyName: inputSignUpFamilyName, password: inputSignUpPassword, pseudo: inputSignUpPseudo, isAdmin: inputSignUpIsAdmin)
+        return (storageModel.saveUser(firstName: inputSignUpFirstName, familyName: inputSignUpFamilyName, password: inputSignUpPassword, pseudo: inputSignUpPseudo, isAdmin: inputSignUpIsAdmin),"")
     }
 }
