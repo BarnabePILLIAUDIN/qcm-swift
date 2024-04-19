@@ -79,12 +79,12 @@
 		C01582BA2BD254BD00B1CBAC /* views */ = {
 			isa = PBXGroup;
 			children = (
+				C09151562BD29B330041F6B8 /* components */,
 				F0D2B5572BCEF3F800BDD55F /* MainScreen.swift */,
 				C01582BB2BD254D300B1CBAC /* UnloggedView.swift */,
 				C01582CA2BD25D4F00B1CBAC /* LoggedView.swift */,
 				C01582CC2BD268D700B1CBAC /* AdminView.swift */,
 				C01582CE2BD2697D00B1CBAC /* UserView.swift */,
-				C01582D62BD26D5C00B1CBAC /* QuestionCard.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -116,6 +116,14 @@
 				C01582D22BD26AE300B1CBAC /* QuestionsViewModel.swift */,
 			);
 			path = questions;
+			sourceTree = "<group>";
+		};
+		C09151562BD29B330041F6B8 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				C01582D62BD26D5C00B1CBAC /* QuestionCard.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 		F0409D072BD19A0F007FDC4B /* TestSubDeVinciTests */ = {

@@ -24,7 +24,7 @@ struct UnloggedView:View {
                     viewModel.resetSignInForm()
                     isLogged = true
                 } else {
-                    showError = true 
+                    showError = true
                 }
                 
             }
@@ -56,4 +56,5 @@ struct UnloggedView:View {
         
     }
 }
+
 

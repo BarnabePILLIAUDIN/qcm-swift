@@ -2,7 +2,7 @@ import SwiftUI
 
 struct QuestionCard: View {
     let question:Question
-   @Binding var answer: Bool
+   @Binding var answer: Bool?
     
     var body: some View {
         VStack{
@@ -16,7 +16,8 @@ struct QuestionCard: View {
                         .font(.title3)
                         .padding(.vertical,5)
                 }.onTapGesture {
-                    if index == question.answer.rawValue{
+                    print(index)
+                    if index == question.answer.rawValue - 1{
                         answer = true
                     } else {
                         answer = false
