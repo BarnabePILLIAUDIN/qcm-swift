@@ -1,16 +1,27 @@
-# TestSubDeVinci
-Vous devrez faire un qcm pour votre examen (ou de l’importance des termes choisis)
+# Examen Barnabé PILLIAUDIN
 
-Programmez un qcm pour une école. Voici les instructions. Pensez à bien organiser l’architecture, à avoir un code lisible et bien documenté.
+## Comment utiliser
 
-L’écran d’accueil est divisé en deux parties (divider() est une vue qui permet de tracer une ligne), la partie du haut permet de se connecter si on est déjà inscrit, au moyen de son pseudonyme et de son mot de passe. En cas d’erreur, une alerte apparaît. Pensez à sécuriser  les entrées des formulaires en cas d’absence de texte par exemple.
-La partie du bas permet de se créer un compte en entrant son pseudo, son nom, son prénom et le mot de passe, à répéter deux fois. Il ne peut y avoir deux pseudo identiques dans la base de données. Une alerte apparaît en cas d’erreur d’inscription.
-Astuce : je vous suggère d’utiliser le fichier des erreurs que je vous ai fourni, en l’adaptant à la situation.
+Ouvrez le dossier l'application dans XCode. Faites cmd + R pour lancer l'application.
 
-Une fois connecté, l’utilisateur a une vue qui lui permet de se déconnecter ou d’accéder à différentes options selon son statut.
+- Dans un premier temps créez vous un compte adminstrateur en activant le toggle
+- Déconnectez vous et créez vous un compte utilisateur en décochant le toggle
+- Répondez aux questions en cliquant sur la réponse de votre choix
+- A la fin du questionnaire, vous verrez votre score et déconnectez vous
+- Conenctez vous au compte adminstrateur pour voir les résultats des utilisateurs
 
-Si c’est un administrateur qui se connecte, il a accès directement aux notes des étudiants.
+Si vous vous reconnectez au compte utilisateur, vous ne pourrez pas refaire le questionnaire.
 
-Si un étudiant se connecte, il a accès aux questions. Il a le choix entre trois réponses pour chaque question. À chaque fois qu’il valide une question, la suivante apparaît. À la fin, son score apparaît à l’écran. S’il a déjà effectué le quizz et qu’il se reconnecte, un message lui affiche qu’il a déjà effectué le quizz et lui rappelle sa note.
+## Screenshots
 
-Bon courage.
+### Page de connexion
+
+![Screenshot de la page de connexion](screenshots/connexion.png)
+
+### Exemple de question
+
+![Screenshot d'une question](screenshots/question.png)
+
+### Admin Dashboard
+
+![Dashboard admin](screenshots/dashboard.png)
