@@ -1,5 +1,6 @@
 import SwiftUI
 
+// Composant qui gère l'affichage de la question et des réponse ainsi que la vérification des réponeses
 struct QuestionCard: View {
     let question:Question
    @Binding var answer: Bool?
@@ -9,19 +10,14 @@ struct QuestionCard: View {
             Text(" \(question.statement)")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .padding(.bottom,10)
-            
+            // Affichage des réponses
             ForEach(0..<question.proposal.count) {index in
                 HStack {
                     Text(question.proposal[index])
                         .font(.title3)
                         .padding(.vertical,5)
                 }.onTapGesture {
-                    print(index)
-                    if index == question.answer.rawValue - 1{
-                        answer = true
-                    } else {
-                        answer = false
-                    }
+                    answer = index == question.answer.rawValue - 1
                 }
             }
         }

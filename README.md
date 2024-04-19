@@ -2,6 +2,8 @@
 
 ## Comment utiliser
 
+Si le modèle de core data n'a pas été clonner le modèle est dans le dernier screenshot.
+
 Ouvrez le dossier l'application dans XCode. Faites cmd + R pour lancer l'application.
 
 - Dans un premier temps créez vous un compte adminstrateur en activant le toggle
@@ -25,3 +27,7 @@ Si vous vous reconnectez au compte utilisateur, vous ne pourrez pas refaire le q
 ### Admin Dashboard
 
 ![Dashboard admin](screenshots/dashboard.png)
+
+### Core data
+
+![Screenshots de core data](screenshots/coredata.png)

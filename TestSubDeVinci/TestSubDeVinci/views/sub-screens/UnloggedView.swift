@@ -1,5 +1,8 @@
 import SwiftUI
 
+
+// Cette vue est affiché que si l'utilisateur n'est pas loggé
+// Elle contient un formulaire pour s'enrigistrer et un pour se connecter
 struct UnloggedView:View {
     @Binding var isLogged:Bool
     @Binding var user: User?
@@ -12,11 +15,10 @@ struct UnloggedView:View {
                 .font(.largeTitle)
                 .foregroundStyle(.red)
         }
-        
         Form{
             Text("Connexion")
             TextField("Identifaiant", text: $viewModel.inputSignInPseudo)
-            TextField("Mot de passe", text: $viewModel.inputSignInPassword)
+            SecureField("Mot de passe", text: $viewModel.inputSignInPassword)
             Button("Se connecter"){
                 let result = viewModel.signIn()
                 let userLogin = result.0
@@ -34,11 +36,12 @@ struct UnloggedView:View {
         Divider()
         Form{
             Text("Sign up")
+            
             TextField("Prénom",text:$viewModel.inputSignUpFirstName)
             TextField("Nom de famille",text:$viewModel.inputSignUpFamilyName)
             TextField("Identifaiant",text: $viewModel.inputSignUpPseudo)
-            TextField("Mot de passe", text: $viewModel.inputSignUpPassword)
-            TextField("Confirmer le mot de passe", text: $viewModel.inputSignUpPassword2)
+            SecureField("Mot de passe", text: $viewModel.inputSignUpPassword)
+            SecureField("Confirmer le mot de passe", text: $viewModel.inputSignUpPassword2)
             Toggle(isOn: $viewModel.inputSignUpIsAdmin, label: {
             // N'aurait pas été là dans une vrai app mais cela permet de créer facilement des comptes admin
                 Text("Compte administrateur")

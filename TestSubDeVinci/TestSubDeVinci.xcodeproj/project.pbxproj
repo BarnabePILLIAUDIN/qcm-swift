@@ -10,7 +10,6 @@
 		C01582BC2BD254D300B1CBAC /* UnloggedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582BB2BD254D300B1CBAC /* UnloggedView.swift */; };
 		C01582C32BD2574F00B1CBAC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C01582C12BD2574F00B1CBAC /* Model.xcdatamodeld */; };
 		C01582C52BD2580A00B1CBAC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582C42BD2580A00B1CBAC /* DataController.swift */; };
-		C01582C72BD2597600B1CBAC /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582C62BD2597600B1CBAC /* ContentViewModel.swift */; };
 		C01582C92BD25A5E00B1CBAC /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582C82BD25A5E00B1CBAC /* AuthViewModel.swift */; };
 		C01582CB2BD25D4F00B1CBAC /* LoggedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582CA2BD25D4F00B1CBAC /* LoggedView.swift */; };
 		C01582CD2BD268D700B1CBAC /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582CC2BD268D700B1CBAC /* AdminView.swift */; };
@@ -41,7 +40,6 @@
 		C01582BB2BD254D300B1CBAC /* UnloggedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnloggedView.swift; sourceTree = "<group>"; };
 		C01582C22BD2574F00B1CBAC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		C01582C42BD2580A00B1CBAC /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		C01582C62BD2597600B1CBAC /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		C01582C82BD25A5E00B1CBAC /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		C01582CA2BD25D4F00B1CBAC /* LoggedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedView.swift; sourceTree = "<group>"; };
 		C01582CC2BD268D700B1CBAC /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 				C01582D12BD26AB600B1CBAC /* questions */,
 				C01582D02BD26A9B00B1CBAC /* user */,
 				C01582C42BD2580A00B1CBAC /* DataController.swift */,
-				C01582C62BD2597600B1CBAC /* ContentViewModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -301,7 +298,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C01582CB2BD25D4F00B1CBAC /* LoggedView.swift in Sources */,
-				C01582C72BD2597600B1CBAC /* ContentViewModel.swift in Sources */,
 				C01582C52BD2580A00B1CBAC /* DataController.swift in Sources */,
 				F0409D212BD23F97007FDC4B /* Users.swift in Sources */,
 				C01582BC2BD254D300B1CBAC /* UnloggedView.swift in Sources */,

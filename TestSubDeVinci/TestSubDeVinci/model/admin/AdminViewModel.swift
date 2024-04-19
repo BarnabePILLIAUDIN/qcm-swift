@@ -9,12 +9,10 @@ class AdminViewModel: ObservableObject{
     private init() {}
     
     func fecthStudents(){
-        let users:[User] = storageModel.getAllUsers()
         var result:[User] = []
         
-        for user in users {
+        for user in storageModel.getAllUsers() {
             if !user.isAdmin{
-                print(user)
                 result.append(user)
             }
         }

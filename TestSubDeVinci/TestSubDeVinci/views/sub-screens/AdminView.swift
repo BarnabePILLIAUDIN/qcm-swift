@@ -1,5 +1,6 @@
 import SwiftUI
 
+// Permet à l'administrateur de voir le résultat des utilisateurs
 struct AdminView:View {
     @StateObject var viewModel = AdminViewModel.shared
     

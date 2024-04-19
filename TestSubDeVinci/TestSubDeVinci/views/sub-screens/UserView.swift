@@ -11,17 +11,21 @@ struct UserView: View {
         VStack{
             Text("Bonjour \(user.firstName ?? "") voici vos questions")
             Spacer()
-            // Une note de -1 signifie que l'utilisateur n'a pas répondu au questionaire
-            
+      
             if let index {
+                // On check si il reste des questions
                 if index < viewModel.questions.count {
+                    // On vérifie que l'utilisateur n'ai pas encore répondu
+                    // Une note de -1 signifie que l'utilisateur n'a pas répondu au questionaire
                     if user.grade == -1 {
                         Text("Question \(index + 1)/\(viewModel.questions.count)")
                         QuestionCard(question: viewModel.questions[index], answer: $answers[index])
                     }
+                    // Sinon on informe l'utilisateur que il a finit
                         else {
                             Text("Vous avez déjà répondu au questionnaire les résultats vous seront communiquer bientôt")
                         }
+                    // Si il a déjà fait le questionnaire il n'a pas le droit de le refaire
                     } else {
                         Text("Merci d'avoir répondu au questionnaire !")
                         Text("Votre score est de \(getScore())/\(viewModel.questions.count)")

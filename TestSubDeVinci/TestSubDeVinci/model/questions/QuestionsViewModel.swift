@@ -11,17 +11,20 @@ class QuestionsViewModel:ObservableObject{
     private init (){
     }
     
-    func fetchQuestions(){
+    func fetchQuestions() {
         questions = model.questions
     }
     
-    func setUserGrade(
-        grade: Int16,
-        user:User
-    ){
-        let users = storageModel.getAllUsers()
-        if let firstName = user.firstName, let familyName = user.familyName, let password = user.password, let pseudo = user.pseudo {
+    func setUserGrade(grade: Int16, user:User){
+        // On vérifie que tout les champs de l'utilisateur on une valeur
+        if  let firstName = user.firstName,
+            let familyName = user.familyName,
+            let password = user.password,
+            let pseudo = user.pseudo {
             
+            let users = storageModel.getAllUsers()
+            
+            // On supprime l'ancienne version de l'utilisateur
             for currentUser in users {
                 if user == currentUser{
                     storageModel.removeUser(
@@ -30,6 +33,7 @@ class QuestionsViewModel:ObservableObject{
                 }
             }
             
+            // On sauvegarde la nouvelle
             storageModel.saveUser(
                 firstName: firstName,
                 familyName: familyName,
