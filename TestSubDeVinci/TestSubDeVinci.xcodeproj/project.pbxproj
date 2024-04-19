@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C01582BC2BD254D300B1CBAC /* UnloggedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582BB2BD254D300B1CBAC /* UnloggedView.swift */; };
+		C01582C32BD2574F00B1CBAC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C01582C12BD2574F00B1CBAC /* Model.xcdatamodeld */; };
+		C01582C52BD2580A00B1CBAC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582C42BD2580A00B1CBAC /* DataController.swift */; };
+		C01582C72BD2597600B1CBAC /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582C62BD2597600B1CBAC /* ContentViewModel.swift */; };
+		C01582C92BD25A5E00B1CBAC /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582C82BD25A5E00B1CBAC /* AuthViewModel.swift */; };
+		C01582CB2BD25D4F00B1CBAC /* LoggedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582CA2BD25D4F00B1CBAC /* LoggedView.swift */; };
+		C01582CD2BD268D700B1CBAC /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582CC2BD268D700B1CBAC /* AdminView.swift */; };
+		C01582CF2BD2697D00B1CBAC /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582CE2BD2697D00B1CBAC /* UserView.swift */; };
+		C01582D32BD26AE300B1CBAC /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582D22BD26AE300B1CBAC /* QuestionsViewModel.swift */; };
+		C01582D72BD26D5C00B1CBAC /* QuestionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01582D62BD26D5C00B1CBAC /* QuestionCard.swift */; };
 		F0409D092BD19A0F007FDC4B /* TestSubDeVinciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0409D082BD19A0F007FDC4B /* TestSubDeVinciTests.swift */; };
 		F0409D212BD23F97007FDC4B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0409D202BD23F97007FDC4B /* Users.swift */; };
 		F0D2B5562BCEF3F800BDD55F /* TestSubDeVinciApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5552BCEF3F800BDD55F /* TestSubDeVinciApp.swift */; };
-		F0D2B5582BCEF3F800BDD55F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5572BCEF3F800BDD55F /* ContentView.swift */; };
+		F0D2B5582BCEF3F800BDD55F /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5572BCEF3F800BDD55F /* MainScreen.swift */; };
 		F0D2B55A2BCEF3FA00BDD55F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D2B5592BCEF3FA00BDD55F /* Assets.xcassets */; };
 		F0D2B55D2BCEF3FA00BDD55F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0D2B55C2BCEF3FA00BDD55F /* Preview Assets.xcassets */; };
 		F0D2B5642BCEF41900BDD55F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D2B5632BCEF41900BDD55F /* Models.swift */; };
@@ -27,12 +37,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C01582BB2BD254D300B1CBAC /* UnloggedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnloggedView.swift; sourceTree = "<group>"; };
+		C01582C22BD2574F00B1CBAC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C01582C42BD2580A00B1CBAC /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		C01582C62BD2597600B1CBAC /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		C01582C82BD25A5E00B1CBAC /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		C01582CA2BD25D4F00B1CBAC /* LoggedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedView.swift; sourceTree = "<group>"; };
+		C01582CC2BD268D700B1CBAC /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		C01582CE2BD2697D00B1CBAC /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		C01582D22BD26AE300B1CBAC /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
+		C01582D62BD26D5C00B1CBAC /* QuestionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCard.swift; sourceTree = "<group>"; };
 		F0409D062BD19A0F007FDC4B /* TestSubDeVinciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSubDeVinciTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0409D082BD19A0F007FDC4B /* TestSubDeVinciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubDeVinciTests.swift; sourceTree = "<group>"; };
 		F0409D202BD23F97007FDC4B /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		F0D2B5522BCEF3F800BDD55F /* TestSubDeVinci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSubDeVinci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D2B5552BCEF3F800BDD55F /* TestSubDeVinciApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSubDeVinciApp.swift; sourceTree = "<group>"; };
-		F0D2B5572BCEF3F800BDD55F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0D2B5572BCEF3F800BDD55F /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		F0D2B5592BCEF3FA00BDD55F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0D2B55C2BCEF3FA00BDD55F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F0D2B5632BCEF41900BDD55F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -56,6 +76,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C01582BA2BD254BD00B1CBAC /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F0D2B5572BCEF3F800BDD55F /* MainScreen.swift */,
+				C01582BB2BD254D300B1CBAC /* UnloggedView.swift */,
+				C01582CA2BD25D4F00B1CBAC /* LoggedView.swift */,
+				C01582CC2BD268D700B1CBAC /* AdminView.swift */,
+				C01582CE2BD2697D00B1CBAC /* UserView.swift */,
+				C01582D62BD26D5C00B1CBAC /* QuestionCard.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C01582BD2BD2562000B1CBAC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C01582D12BD26AB600B1CBAC /* questions */,
+				C01582D02BD26A9B00B1CBAC /* user */,
+				C01582C42BD2580A00B1CBAC /* DataController.swift */,
+				C01582C62BD2597600B1CBAC /* ContentViewModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C01582D02BD26A9B00B1CBAC /* user */ = {
+			isa = PBXGroup;
+			children = (
+				F0409D202BD23F97007FDC4B /* Users.swift */,
+				C01582C82BD25A5E00B1CBAC /* AuthViewModel.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		C01582D12BD26AB600B1CBAC /* questions */ = {
+			isa = PBXGroup;
+			children = (
+				F0D2B5632BCEF41900BDD55F /* Models.swift */,
+				C01582D22BD26AE300B1CBAC /* QuestionsViewModel.swift */,
+			);
+			path = questions;
+			sourceTree = "<group>";
+		};
 		F0409D072BD19A0F007FDC4B /* TestSubDeVinciTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,10 +147,10 @@
 		F0D2B5542BCEF3F800BDD55F /* TestSubDeVinci */ = {
 			isa = PBXGroup;
 			children = (
+				C01582C12BD2574F00B1CBAC /* Model.xcdatamodeld */,
+				C01582BD2BD2562000B1CBAC /* model */,
+				C01582BA2BD254BD00B1CBAC /* views */,
 				F0D2B5552BCEF3F800BDD55F /* TestSubDeVinciApp.swift */,
-				F0D2B5572BCEF3F800BDD55F /* ContentView.swift */,
-				F0D2B5632BCEF41900BDD55F /* Models.swift */,
-				F0409D202BD23F97007FDC4B /* Users.swift */,
 				F0D2B5592BCEF3FA00BDD55F /* Assets.xcassets */,
 				F0D2B55B2BCEF3FA00BDD55F /* Preview Content */,
 			);
@@ -211,10 +273,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01582CB2BD25D4F00B1CBAC /* LoggedView.swift in Sources */,
+				C01582C72BD2597600B1CBAC /* ContentViewModel.swift in Sources */,
+				C01582C52BD2580A00B1CBAC /* DataController.swift in Sources */,
 				F0409D212BD23F97007FDC4B /* Users.swift in Sources */,
+				C01582BC2BD254D300B1CBAC /* UnloggedView.swift in Sources */,
 				F0D2B5642BCEF41900BDD55F /* Models.swift in Sources */,
-				F0D2B5582BCEF3F800BDD55F /* ContentView.swift in Sources */,
+				F0D2B5582BCEF3F800BDD55F /* MainScreen.swift in Sources */,
+				C01582CF2BD2697D00B1CBAC /* UserView.swift in Sources */,
 				F0D2B5562BCEF3F800BDD55F /* TestSubDeVinciApp.swift in Sources */,
+				C01582C32BD2574F00B1CBAC /* Model.xcdatamodeld in Sources */,
+				C01582CD2BD268D700B1CBAC /* AdminView.swift in Sources */,
+				C01582D72BD26D5C00B1CBAC /* QuestionCard.swift in Sources */,
+				C01582C92BD25A5E00B1CBAC /* AuthViewModel.swift in Sources */,
+				C01582D32BD26AE300B1CBAC /* QuestionsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +545,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C01582C12BD2574F00B1CBAC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C01582C22BD2574F00B1CBAC /* Model.xcdatamodel */,
+			);
+			currentVersion = C01582C22BD2574F00B1CBAC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F0D2B54A2BCEF3F800BDD55F /* Project object */;
 }

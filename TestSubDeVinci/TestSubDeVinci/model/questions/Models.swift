@@ -8,6 +8,10 @@
 import Foundation
 
 class Model {
+    static var shared = Model()
+    
+    private init(){}
+    
     let questions: [Question] = [
         Question(
             statement: "Sur quel environnement peut-on utiliser XCode ?" ,
@@ -16,7 +20,7 @@ class Model {
                 "Uniquement les Macs.",
                 "Les deux. Ça n'a pas d'importance."
             ],
-            answer: .one
+            answer: .two
         ),
         Question(
             statement: "Que signifie MVVM ?",
@@ -25,7 +29,7 @@ class Model {
                 "Model, View, ViewModel",
                 "Modal, Value, ViewModal"
             ],
-            answer: .one
+            answer: .two
         ),
         Question(
             statement: "Quel framework est utilisé par Swift ?",
@@ -34,7 +38,7 @@ class Model {
                 "Cocoa Touch",
                 "Serial"
             ],
-            answer: .one
+            answer: .two
         ),
         Question(
             statement: "Quels sont les éléments d'une variable ?",
@@ -43,7 +47,7 @@ class Model {
                 "Un nom, un singleton et un type.",
                 "Un nom, un type et une valeur."
             ],
-            answer: .one
+            answer: .three
         ),
         Question(
             statement: "Avec UIKit, qu'utilise-t-on pour lier une vue au storyBoard ?",
@@ -61,7 +65,7 @@ class Model {
                 "Il permet de rectifier les fichiers audio.",
                 "Cela génère une instance unique."
             ],
-            answer: .one
+            answer: .three
         ),
         Question(
             statement: "'struct MainView: some View' doit contenir",
@@ -79,7 +83,7 @@ class Model {
                 "C'est un type Chien",
                 "C'est un optionnel"
             ],
-            answer: .one
+            answer: .three
         ),
         Question(
             statement: "Comment retourne-t-on une valeur avec un dictionnaire ?",
@@ -88,7 +92,7 @@ class Model {
                 "Avec une clé",
                 "Par concaténation"
             ],
-            answer: .one
+            answer: .two
         ),
         Question(
             statement: "Quel est le principe de la View et du Model",
@@ -102,7 +106,8 @@ class Model {
     ]
 }
 
-struct Question {
+struct Question:Identifiable {
+    let id: UUID = UUID()
     let statement: String
     let proposal: [String]
     let answer: possibleAnswers
